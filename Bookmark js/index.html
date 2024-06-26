@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center py-2 position-relative">Bookmark Manager</h1>
+        <div class="bookmark-line w-100 p-3 py-4 mt-5 d-flex text-center"></div>
+        <h2>
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+            Bookmark your favorite sites
+        <i class="fa fa-bookmark" aria-hidden="true"></i>
+        </h2>
+        <div class="card mt-4">
+            <div class="card-body" id="main-form">
+                <form id="bookmarkForm">
+                    <div class="form-group">
+                        <label class="py-2"  for="siteName">Site Name</label>
+                        <input type="text" class="form-control" id="siteName" placeholder="Enter site name" required>
+                        <div class="invalid-feedback">Please enter a valid name (letters only).</div>
+                        <div class="valid-feedback">Name looks good!</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="py-2" for="siteURL">Site URL</label>
+                        <input type="url" class="form-control" id="siteURL" placeholder="Enter site URL" required>
+                        <div class="invalid-feedback">Please enter a valid URL.</div>
+                        <div class="valid-feedback">URL looks good!</div>
+                    </div>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-danger my-3 px-5">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="mt-4" id="bookmarksResults"></div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
